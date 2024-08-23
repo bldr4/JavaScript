@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ecouteurs d'event en attribut HTML -->
+    <a href="" onclick="confirm('êtes-vous sûr de vuloir supprimer cet article ? ')">Supprimer un article</a>
+    <!-- <button 
+    onmouseover="document.body.style.backgroundColor='orange'"
+    onmouseout="document.body.style.backgroundColor='white'">Changer le fond</button> -->
+
+    <!-- Ecouteurs sur le script  -->
+    <a class="link">Changer de page</a>
+ 
+
+    <!-- Gestionnaire d'event  -->
+    <button class="btn">Changer le fond</button>
+
+    <!-- Stopper le comportement par defaut d'un élément -->
+     <form action="index2.html">
+        <input type="text">
+        <input type="submit">
+     </form>
+
+     <!-- propagation d'event  -->
+      <article class="article" style="background-color: silver">
+            <h1 class="Tarticle">Titre de l'article</h1>
+      </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
