@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #000;
+           
+        }
+        .left, .right{
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+        .left{
+            background-color: red;
+        }
+        .right{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left" data-aos="fade-up"></div>
+    <div class="right" data-aos="fade-down"></div>
+    <div class="left" data-aos="flip-left"></div>
+    <div class="right" data-aos="flip-right"></div>
+    <div class="left" data-aos="zoom-in"></div>
+    <div class="right" data-aos="zoom-in-up"></div>
+    <div class="left" data-aos="fade-up"
+    data-aos-duration="3000"></div>
+    <div class="right"  data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500"></div>
+    <div class="left" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"></div>
+    <div class="right" data-aos="zoom-out-down"></div>
+</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

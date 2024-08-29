@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing</title>
+    <style>
+        #myCanvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+        #position {
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #controls {
+            margin-top: 10px;
+        }
+        #controls label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="500" height="400"></canvas>
+<div id="position">Position: X=0, Y=0</div>
+<div id="controls">
+    <button id="clearButton">Effacer le dessin</button>
+    <label for="colorPicker">Couleur:</label>
+    <input type="color" id="colorPicker" value="#000000">
+    <label for="thickness">Épaisseur du trait:</label>
+    <input type="range" id="thickness" min="1" max="20" value="2">
+    <label for="bgColorPicker">Couleur de fond:</label>
+    <input type="color" id="bgColorPicker" value="#ffffff">
+        <label for="mode">Mode:</label>
+        <select id="mode">
+            <option value="draw" selected>Déssiner</option>
+            <option value="erase">Effacer</option>
+        </select>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .tilt{
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d
+        }
+        .inner-square{
+            width: 100px;
+            height: 100px;
+            background: white;
+            transform: translateZ(50px)
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tilt" data-tilt>
+        <div class="inner-square"></div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script>
+        $('.tilt').tilt({
+            glare: true,
+            maxGlare: .5,
+            scale: 1.2,
+            axis: 'y',
+            reset: false
+            
+        })
+        
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+</body>
+</html>
