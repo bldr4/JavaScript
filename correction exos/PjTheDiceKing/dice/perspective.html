@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" href="perspective.css">
+</head>
+<body>
+    <div class = "groupe">
+        <button class="roll rollUp">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" transform="rotate(-90)" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+        </button>
+        <div class="scene">
+            <button class="roll rollLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" transform="rotate(-180)" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            </button>
+            <div class="cube">
+                 <div class="cubeFace cubeFace1">1</div>
+                 <div class="cubeFace cubeFace2">2</div>
+                 <div class="cubeFace cubeFace3">3</div>
+                 <div class="cubeFace cubeFace4">4</div>
+                 <div class="cubeFace cubeFace5">5</div>
+                 <div class="cubeFace cubeFace6">6</div>
+            </div>
+            <button class="roll rollRight">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" transform="rotate(0)" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            </button>
+        </div>
+        <button class="roll rollDown">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" transform="rotate(90)" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+        </button>
+        <button class="rollBtn">Roll the dice</button>
+    </div>
+    <script src="./perspective.js"></script>
+</body>
+</html>

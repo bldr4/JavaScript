@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .controls{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            display: flex;
+            flex-direction:column ;
+        }
+        .btn{
+            margin:5px;
+            padding:15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="controls">
+<button class='btn' id="up">Up</button>
+<button class='btn' id="down">Down</button>
+<button class='btn' id="left">Left</button>
+<button class='btn' id="right">Right</button>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.js" integrity="sha512-HCh7TuJvWZ35Ixo/afKeBRbAUtnqQWOrpw5Fs1bdWjWILg175hy9XRmuqG/vWyAqBKvUZStGMAsqKmYKqP91YQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
