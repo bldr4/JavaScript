@@ -95,3 +95,44 @@ let res2 = {...obj1,...obj2,...obj3,...obj4};
 let frozenObj = Object.freeze(person);
 frozenObj.prenom = 'Jane';
 console.log(frozenObj)
+
+// seal bloque les ajouts et les suppressions mais pas les modifications
+let sealedObj = Object.seal(person);
+sealedObj.prenom = 'Jane';
+sealedObj.age = 25;
+console.log(sealedObj);
+
+
+
+//  l'objet Date 
+let date = new Date();
+//  renvoie le timestamp
+let timeStamp = date.getTime();
+
+///////  Exercice : à partir du timeStamp, renvoyer le nombre d'années, jours, heures, minutes et secondes écoulées depuis le 1er janvier 1970 //////////
+
+//  date et heure 
+let dateHeurefR = date.toLocaleString('fr-FR');
+//  date 
+let datefR = date.toLocaleDateString('fr-FR');
+//  heure
+let heurefR = date.toLocaleTimeString('fr-FR');
+console.log(dateHeurefR, datefR, heurefR);
+
+
+//  exemple sur un autre fuseau horaire
+let exempleDate = date.toLocaleString('en-US', {
+    timeZone: 'America/New_York',
+    month: '2-digit',
+    day: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit', 
+    hour12: true
+});
+console.log(exempleDate);
+
+
+
+
