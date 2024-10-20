@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #3d465a, #717e87);
+    color: white;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #f1f1f1 ;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090f29;
+    color: white;
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.message {
+    margin: 40px;
+    font-size: 40px;
+}

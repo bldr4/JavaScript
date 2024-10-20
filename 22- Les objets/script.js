@@ -110,6 +110,15 @@ let date = new Date();
 let timeStamp = date.getTime();
 
 ///////  Exercice : à partir du timeStamp, renvoyer le nombre d'années, jours, heures, minutes et secondes écoulées depuis le 1er janvier 1970 //////////
+let secondes = Math.floor(timeStamp /1000);
+let minutes =Math.floor(secondes /60);
+let heures = Math.floor(minutes/60);
+let jours = Math.floor(heures/24);
+let annees = Math.floor(jours/365.25);
+
+console.log(`${annees} ans, ${jours % 365.25} jours, ${heures % 24} heures, ${minutes % 60} minutes, ${secondes % 60} secondes`);
+///////  Exercice : à partir du timeStamp, renvoyer le nombre d'années, jours, heures, minutes et secondes écoulées depuis le 1er janvier 1970 //////////
+
 
 //  date et heure 
 let dateHeurefR = date.toLocaleString('fr-FR');
